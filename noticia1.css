@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            background: #f7f7f7;
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            color: #222;
+        }
+        header {
+            background: #c4170c;
+            padding: 16px 0 8px 0;
+            text-align: center;
+        }
+        header h2 {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            max-width: 680px;
+            margin: 32px auto 0 auto;
+            padding: 32px 24px 40px 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .data {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 18px;
+        }
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin: 0 0 22px 0;
+            line-height: 1.18;
+            color: #222;
+        }
+        img {
+            width: 100%;
+            max-height: 340px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 0 0 22px 0;
+            display: block;
+        }
+        h2 {
+            font-size: 1.25rem;
+            color: #c4170c;
+            margin: 32px 0 10px 0;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.08rem;
+            line-height: 1.7;
+            margin: 0 0 18px 0;
+        }
+        @media (max-width: 700px) {
+            .container {
+                padding: 18px 6vw 28px 6vw;
+                margin: 0;
+                border-radius: 0;
+            }
+            h1 {
+                font-size: 1.3rem;
+            }
+            h2 {
+                font-size: 1.05rem;
+            }
+        }

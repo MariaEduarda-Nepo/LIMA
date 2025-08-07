@@ -1,0 +1,211 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Um cinza claro para o fundo */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #c91c1c; /* Azul vibrante */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #e0f2f7; /* Um azul mais claro no hover */
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Destaque */
+.destaque {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.destaque h2 {
+    color: #b30000; /* Azul mais escuro para o título de destaque */
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.destaque img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destaque .data-publicacao {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.destaque p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.ler-mais {
+    display: inline-block;
+    background-color: #a77428; /* Verde para o botão "Ler Mais" */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ler-mais:hover {
+    background-color: #c96223; /* Verde mais escuro no hover */
+    transform: translateY(-2px); /* Efeito de leve levantamento */
+}
+
+/* Seção de Últimas Notícias */
+.ultimas-noticias {
+    margin-top: 40px;
+}
+
+.ultimas-noticias h2 {
+    text-align: center;
+    color: #e91c0d;
+    font-size: 2em;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.noticia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Layout responsivo em colunas */
+    gap: 30px; /* Espaçamento entre as notícias */
+}
+
+.noticia-item {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex; /* Para alinhar imagem e texto */
+    flex-direction: column; /* Conteúdo em coluna */
+}
+
+.noticia-item:hover {
+    transform: translateY(-5px); /* Efeito de levantar no hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Sombra mais forte no hover */
+}
+
+.noticia-item h3 {
+    color: #d01d1d;
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.noticia-item img {
+    max-width: 100%;
+    height: 180px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.noticia-item .data-publicacao {
+    font-size: 0.85em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.noticia-item p {
+    font-size: 0.95em;
+    flex-grow: 1; /* Faz o parágrafo ocupar o espaço restante */
+    margin-bottom: 15px;
+}
+
+.noticia-item .ler-mais {
+    align-self: flex-start; /* Alinha o botão "ler mais" à esquerda dentro do item */
+    font-size: 0.9em;
+    padding: 8px 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Um cinza escuro para o rodapé */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav a {
+        margin: 0 10px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .destaque h2 {
+        font-size: 1.8em;
+    }
+
+    .ultimas-noticias h2 {
+        font-size: 1.8em;
+    }
+
+    .noticia-grid {
+        grid-template-columns: 1fr; /* Em telas menores, as notícias ficam em uma única coluna */
+    }
+
+    .noticia-item {
+        margin-bottom: 20px;
+    }
+}

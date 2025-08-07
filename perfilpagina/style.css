@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif; /* Uma fonte padrão */
+    color: #4a4a4a; /* Um tom de cinza escuro para o texto, que combina bem com rosa */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+
+    /* Fundo com imagem de flores rosas */
+    background-image: url('rosas.jpg'); /* **ATENÇÃO:** Mude 'flores_rosas.jpg' para o nome do seu arquivo de imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área, sem distorcer */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto você rola a página */
+    background-color: #f7e6f8; /* Uma cor rosa bem clarinha como fallback caso a imagem não carregue */
+}
+
+header {
+    background-color: rgba(255, 192, 203, 0.8); /* Rosa claro com um pouco de transparência */
+    color: #8b008b; /* Um roxo escuro para o texto do cabeçalho, para contraste */
+    padding: 30px 20px; /* Um pouco mais de padding para o cabeçalho */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o cabeçalho */
+}
+
+h1, h2 {
+    color: #c71585; /* Um tom de rosa mais vibrante para os títulos */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); /* Uma leve sombra para os títulos */
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente para o conteúdo principal */
+    max-width: 900px; /* Limita a largura do conteúdo para melhor leitura */
+    margin: 30px auto; /* Centraliza o conteúdo e adiciona margem superior/inferior */
+    padding: 30px;
+    border-radius: 10px; /* Bordas arredondadas para o container principal */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra mais forte para o container principal */
+}
+
+section {
+    margin-bottom: 40px; /* Espaço entre as seções */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0e0f0; /* Linha divisória suave */
+}
+
+section:last-child {
+    border-bottom: none; /* Remove a linha da última seção */
+}
+
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do seu container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Transforma a imagem em um círculo, ideal para foto de perfil */
+    border: 5px solid #ffb6c1; /* Borda rosa clara para a foto */
+    display: block; /* Para centralizar a imagem */
+    margin: 0 auto 20px auto; /* Centraliza a imagem e adiciona margem abaixo */
+}
+
+a {
+    color: #da70d6; /* Um tom de orquídea para os links */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    transition: color 0.3s ease; /* Transição suave na cor ao passar o mouse */
+}
+
+a:hover {
+    color: #9932cc; /* Um roxo mais escuro quando o mouse passa por cima */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+ul {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    position: relative;
+}
+
+li::before {
+    content: '🌸'; /* Adiciona um emoji de florzinha como marcador de lista */
+    position: absolute;
+    left: -5px;
+    color: #ff69b4; /* Cor da florzinha */
+}
+
+footer {
+    background-color: rgba(255, 192, 203, 0.7); /* Rodapé rosa com transparência */
+    color: #8b008b;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+}

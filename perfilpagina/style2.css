@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif; /* Uma fonte elegante e legível */
+    color: #4a4a4a; /* Tom de cinza escuro para o texto, combinando com rosa */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Espaçamento entre as linhas para melhor leitura */
+
+    /* Fundo com imagem de flores rosas */
+    background-image: url('rosas.jpg'); /* **IMPORTANTE:** Troque para o nome do seu arquivo de imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Imagem fixa ao rolar a página */
+    background-color: #fce7f6; /* Cor rosa clara de fallback, caso a imagem não carregue */
+}
+
+header {
+    background-color: rgba(255, 192, 203, 0.85); /* Rosa claro com transparência para o cabeçalho */
+    color: #8b008b; /* Roxo escuro para o texto do cabeçalho */
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    position: sticky; /* Faz o cabeçalho "grudar" no topo ao rolar */
+    top: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+}
+
+header h1 {
+    margin: 0; /* Remove margem padrão do h1 no cabeçalho */
+    color: #c71585; /* Rosa vibrante para o título principal */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #ffb6c1; /* Fundo rosa claro para o link de navegação */
+    color: #8b008b; /* Texto roxo escuro para o link */
+    padding: 10px 20px;
+    border-radius: 20px; /* Bordas arredondadas para o botão */
+    text-decoration: none; /* Remove sublinhado padrão */
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave ao passar o mouse */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra no botão */
+}
+
+nav a:hover {
+    background-color: #ff85a2; /* Rosa mais escuro ao passar o mouse */
+    color: #6a006a; /* Roxo mais intenso */
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.95); /* Fundo branco quase opaco para o conteúdo principal */
+    max-width: 800px; /* Largura máxima para o conteúdo */
+    margin: 40px auto; /* Centraliza o conteúdo com margem superior/inferior */
+    padding: 35px;
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18); /* Sombra mais pronunciada para o container principal */
+}
+
+h2 {
+    color: #c71585; /* Rosa vibrante para os subtítulos */
+    border-bottom: 2px solid #ffb6c1; /* Linha rosa clara abaixo do título */
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    text-align: center; /* Centraliza o título */
+}
+
+ul {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #ffe6f2; /* Fundo rosa bem claro para cada item da lista */
+    margin-bottom: 15px; /* Espaço entre os itens da lista */
+    padding: 18px 25px;
+    border-radius: 10px; /* Bordas arredondadas para os itens */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); /* Sombra suave para cada item */
+    transition: transform 0.2s ease; /* Efeito de transição ao passar o mouse */
+    display: flex; /* Para alinhar o emoji e o texto */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+}
+
+li:hover {
+    transform: translateY(-3px); /* Efeito de "levantar" o item ao passar o mouse */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12); /* Sombra um pouco maior no hover */
+}
+
+li::before {
+    content: '🌸'; /* Adiciona um emoji de florzinha como marcador de lista */
+    display: inline-block;
+    margin-right: 15px; /* Espaço entre a flor e o texto */
+    font-size: 1.2em; /* Tamanho da flor */
+    color: #ff69b4; /* Cor da flor */
+    transform: rotate(-15deg); /* Uma leve rotação para a flor */
+}
+
+li strong {
+    color: #a020f0; /* Um tom de roxo para destacar os títulos dos gostos */
+}
+
+footer {
+    background-color: rgba(255, 192, 203, 0.7); /* Rodapé rosa com transparência */
+        color: #8b008b; /* Roxo escuro para o texto do rodapé */
+        text-align: center;
+    }
