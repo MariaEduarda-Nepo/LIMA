@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f7f6;
-    color: #333;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -19,7 +19,7 @@ body {
 
 /* Header e Navegação */
 header {
-    background: #004d40;
+    background: #8c1e2e;
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -32,7 +32,7 @@ header h1 {
 }
 
 nav {
-    background: #00695c;
+    background: #971c2a;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -46,13 +46,13 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #00897b;
+    background-color: #6f040c;
 }
 
 /* Formulário de Inscrição */
 .container h2 {
-    color: #004d40;
-    border-bottom: 2px solid #004d40;
+    color: #8c1e2e;
+    border-bottom: 2px solid #8c1e2e;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -92,12 +92,12 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus {
-    border-color: #004d40;
+    border-color: #000000;
     outline: none;
 }
 
 button[type="submit"] {
-    background: #004d40;
+    background: #8c1e2e;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -108,12 +108,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #00332c;
+    background-color: #8c1e2e;
 }
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: #53070b;
     color: white;
     text-align: center;
     padding: 1.5rem 0;
