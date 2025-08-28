@@ -1,0 +1,35 @@
+h1 {
+    color: rgb(54, 182, 194);
+    background-color: rgb(2, 4, 2);
+    text-align: center;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 150px;
+}
+
+h1:hover{
+    color: white;
+    background-color: rgb(154, 10, 10);
+    padding: 15px;
+}
+
+h2 {
+    color: magenta;
+    background-color: rgb(60, 255, 0);
+    text-align: center;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 150px;
+}
+h2:hover{
+    color: white;
+    background-color: rgb(154, 10, 128);
+    transition: 0.5s;
+}
+
+img{
+    height: 70px;
+    width: auto;
+}
