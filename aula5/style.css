@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*problemas com acentuação*/
+@import url('https://fonts.googleapis.com/css2?family=Asimovian:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "Asimovian";
+    src: url(aula5\Asimovian-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    
+}
+h2 {
+    color:blueviolet;
+    font-size: 40px;
+}
+
+
+body {
+    font-family: Asimovian, sans-serif;
+    font-size: 15px;
+    background-color: beige;
+}
+
